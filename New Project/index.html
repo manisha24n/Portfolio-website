@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c93e114a27.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="inmage/logo.png" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1> Hi,I'm <span>Manisha Kumari. </span><br>From India</h1>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--------About 
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="inmage/image m.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me </h1>
+                    <p>Hello, I'm Manisha Kumari and I am a recent graduate with a degree in Computer Science from sharda university with a strong passion for technology and problem-solving. Throughout my academic journey, I honed my skills in programming,
+                        data analysis, and software development, working with languages such as Python, C, Structure Query Languages ,power Bi, HTML, CSS, JavaScript. I have a particular interest in web development, data science, and data analysis ,etc.
+                        and I thrive on creating innovative solutions to complex challenges.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Expreience')">Expreience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab " id="Skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTLM,CSS,JavaScript</li>
+                            <li><span>Data Analysis</span><br>Python, SQL,Power BI,Excel,Statistical Analysis</li>
+                            <li><span>Python Developer</span><br>Python,Django</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Expreience">
+                        <ul>
+                            <li><span>Fresher</span><br> Web Development</li>
+                            <li><span>Fresher</span><br>Data Analysis</li>
+                            <li><span>Fresher</span><br>Python Developer</li>
+
+
+
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2018-2021</span><br>Diplome in computer science</li>
+                            <li><span>2021-2024</span><br>B.Tech in Computer Science from Sharda University</li>
+
+
+                        </ul>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>------------>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <!-- About Image Section -->
+                <div class="about-col-1">
+                    <img src="inmage/image m.png" alt="Manisha Kumari">
+                </div>
+                <!-- About Details Section -->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hello, I'm Manisha Kumari, a recent graduate with a degree in Computer Science from Sharda University. I have a strong passion for technology and problem-solving. Throughout my academic journey, I honed my skills in programming, data analysis, and software
+                        development, working with languages such as Python, C, SQL, Power BI, HTML, CSS, and JavaScript. I have a particular interest in web development, data science, and data analysis, and I thrive on creating innovative solutions to
+                        complex challenges.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web Development:</span> HTML, CSS, JavaScript</li>
+                            <li><span>Data Analysis:</span> Python, SQL, Power BI, Excel, Statistical Analysis</li>
+                            <li><span>Python Developer:</span> Python, Django</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Fresher: </span> Web Development</li>
+                            <li><span>Fresher: </span> Data Analysis</li>
+                            <li><span>Fresher: </span> Python Developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2018-2021: </span> Diploma in Computer Science</li>
+                            <li><span>2021-2024: </span> B.Tech in Computer Science from Sharda University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--------Services------------------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services </h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I’m a passionate web developer with a focus on creating dynamic and responsive websites. Skilled in HTML, CSS, JavaScript, and modern frameworks like React, I strive to deliver seamless and engaging user experiences. My goal is to
+                        build clean, efficient, and visually appealing websites that meet both client and user needs.</p>
+                    <a href="#"> Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Data Analysis</h2>
+                    <p>I’m a data enthusiast with a strong foundation in data analysis and visualization. Experienced in tools like SQL, Python, Power BI, and Excel, I specialize in extracting insights from complex datasets to drive informed decision-making.
+                        My goal is to help businesses unlock the power of data to improve efficiency, optimize processes, and achieve their objectives.</p>
+                    <a href="#"> Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+
+                    <h2>Python Developer</h2>
+                    <p>I’m a Python developer with a strong focus on building efficient, scalable solutions. With experience in web development, data analysis, and automation, I leverage Python’s versatility to tackle complex challenges. Passionate about
+                        clean code and continuous learning, I aim to create high-quality, maintainable applications that solve real-world problems.</p>
+                    <a href="#"> Learn more</a>
+                </div>
+            </div>
+
+        </div>
+
+    </DIV>
+    <!-----------------------portfolio------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h class="sub-title">My Work</h>
+            <div class="work-list">
+                <div class="work">
+                    <img src="inmage/work-1.png">
+                    <div class="layer">
+                        <h3>Visualizations in Python on Sales Data</h3>
+                        <p>Visualizations help identify trends and outliers in sales data, providing insights into potential problem areas. Understanding customer behavior involves analyzing factors like pricing, promotions, product quality, and seasonality
+                            that influence buying habits. Predicting future sales through time series forecasting aids in inventory management, promotional planning, and strategic decision-making.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i>
+                         </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="inmage/work-2.png">
+                    <div class="layer">
+                        <h3>E-commerce data analysis in Power BI</h3>
+                        <p>The analysis tracks revenue, volume, and performance across products, regions, and customer preferences. It also includes demographic data, purchase behavior, and lifetime value to identify profitable segments and enhance retention.
+                            Additionally, campaign performance metrics like open rates, click-through rates, and conversions are used to optimize channel effectiveness.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i>
+                         </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="inmage/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>A social media app connects people to share updates, photos, and videos, enabling communication, networking, and entertainment in a virtual community..</p>
+                        <a href="#"><i class="fa-solid fa-link"></i>
+                         </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn"> See More</a>
+        </div>
+        <!---------------contact--------------->
+        <!-----------<div id="Contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-Left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-sharp fa-thin fa-paper-plane-top"></i>manishakumarimandro@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>9354657607</p>
+                        <div class="social-icons"></div>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/shiv_mani1/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/manisha-kumari-98748a21a/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="contact-Right"></div>---->
+
+        <!-----------<div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i> manishakumarimandro@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> 9354657607</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/shiv_mani1/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/manisha-kumari-98748a21a/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="inmage/Manisha_Kumari_resume.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="button" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>---->
+
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <!-- Left Section -->
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i> manishakumarimandro@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> 9354657607</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/shiv_mani1/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/manisha-kumari-98748a21a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="image/Manisha_Kumari_resume.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <!-- Right Section -->
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="copyright">
+            <p>copyright@ Maneesha Kumari <i class="fa-solid fa-heart"></i> </p>
+
+        </div>
+
+
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (var tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (var tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+
+                // Add active classes to the clicked tab and corresponding content
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu.style.right = "0";
+
+            }
+
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+
+            }
+        </script>
+        <!----------------<script>
+            const scriptURL = '<https://script.google.com/macros/s/AKfycbxqdj_8lDIBv-tVemlmw1eB1AAqXdzyYnS1CiBqq43JOtuioA4PXnQ3FGCgT7x-w_A/exec>'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, {
+                        method: 'POST',
+                        body: new FormData(form)
+                    })
+                    .then(response => {
+                        msg.innerHTML = "Message sent Successfully"
+                        setTimeout(function() {
+                            msg.innerHTML = ""
+                        }, 5000)
+                        form.reset()
+                    })
+                    .catch(error => console.error('Error!', error.message))
+            })
+        </script>------------->
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxqdj_8lDIBv-tVemlmw1eB1AAqXdzyYnS1CiBqq43JOtuioA4PXnQ3FGCgT7x-w_A/exec';
+            const form = document.forms['submit-to-google-sheet'];
+            const msg = document.getElementById("msg");
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault(); // Prevent default form submission behavior
+
+                fetch(scriptURL, {
+                        method: 'POST',
+                        body: new FormData(form)
+                    })
+                    .then(response => {
+                        msg.innerHTML = "Message sent successfully!";
+                        setTimeout(() => {
+                            msg.innerHTML = ""; // Clear the success message after 5 seconds
+                        }, 5000);
+                        form.reset(); // Reset the form fields
+                    })
+                    .catch(error => {
+                        console.error('Error!', error.message);
+                        msg.innerHTML = "Message could not be sent. Please try again.";
+                        setTimeout(() => {
+                            msg.innerHTML = ""; // Clear the error message after 5 seconds
+                        }, 5000);
+                    });
+            });
+        </script>
+
+</body>
+
+</html>
